@@ -16,7 +16,7 @@
 
 7. Launch it from terminal with `git-checker` command. That's all.
 
-## You may also use source script instead of app, in this case just use `git-checker.py`.
+#### You may also use source script instead of app, in this case just use `git-checker.py`.
  
 
 ### If you want to have it in your App List and on the App Dock:
