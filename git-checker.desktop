@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Git Checker
+Comment=Simple GitHub search engine
+Exec=/'PATH TO'/git-checker
+Path=/'PATH TO'
+Icon=/'PATH TO'/pickle.png
+Terminal=true
+Type=Application
+
