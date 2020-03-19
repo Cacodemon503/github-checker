@@ -1,4 +1,8 @@
-# Launch instructions for Linux
+# GitHub Checker: Simple search engine: it helps to find software developers by username on GitHub
+
+[screenshot](https://github.com/Cacodemon503/github-checker/blob/master/screenshot.png?raw=true)
+
+## Launch instructions for Linux
 
 ### The easiest:
 
