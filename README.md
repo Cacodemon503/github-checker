@@ -14,6 +14,6 @@ If you are not shure, you can check the source code and use it instead of .exe f
 #### You may also use source script instead of app, in this case just use `git-checker.py`. 
 Check the code for required modules
 
-# #----------------------OTHER OPTIONS-----------------------#
+# #---------OTHER OPTIONS----------#
 
 ### [LINUX APP](https://github.com/Cacodemon503/github-checker/tree/master)  
