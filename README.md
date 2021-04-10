@@ -35,6 +35,6 @@ Check the code for required modules
 
 4. If you setup the `git-checker.desktop` file correctly, you will now be able to see it in your App List and will be able to move an app to your App Dock. 
 
-# #----------------------OTHER OPTIONS-----------------------#
+# #-----------OTHER OPTIONS--------------#
 
 ### [WIN APP](https://github.com/Cacodemon503/github-checker/tree/windows)  
