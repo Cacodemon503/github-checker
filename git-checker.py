@@ -199,8 +199,8 @@ def github_checker(name):
     headers = {'Authorization': 'token ' + str(token)}
     r = requests.get(url=URL, headers=headers)
     user_data = r.json()
-    headers_info = r.headers
-    return(user_data, headers_info)
+    status_code = r.status_code
+    return(user_data, status_code)
 
 
 def languages_checker(name):
@@ -287,18 +287,18 @@ def backward():
         main()
 
 
-def status(headers_info):
-    if headers_info['Status'] == '401 Unauthorized':
+def status(status_code):
+    if status_code == 401:
         print('Invalid Token')
         time.sleep(2)
         os.system('cls')
         auth()
-    elif headers_info['Status'] == '403 Forbidden':
+    elif status_code == 403:
         print('API rate limit exceeded')
         time.sleep(2)
         os.system('cls')
         main()
-    elif headers_info['Status'] == '404 Not Found':
+    elif status_code == 404:
         print("There is no such user on GitHub")
         time.sleep(2)
         os.system('cls')
@@ -308,8 +308,8 @@ def status(headers_info):
 def main():
     try:
         name = main_menu()
-        user_data, headers_info = github_checker(name)
-        if headers_info['Status'] == "200 OK":
+        user_data, status_code = github_checker(name)
+        if status_code == 200:
             try:
                 stop_threads = False
                 t1 = threading.Thread(target=animation, args=(lambda: stop_threads, ))
@@ -325,7 +325,7 @@ def main():
                 t1.join()
                 keyboardinterrupt()
         else:
-            status(headers_info)
+            status(status_code)
     except(requests.exceptions.ConnectionError):
         try:
             print('Please, check your internet connection ...')

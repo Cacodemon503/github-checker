@@ -4,9 +4,9 @@ block_cipher = None
 
 
 a = Analysis(['git-checker.py'],
-             pathex=['C:\\Users\\Mi\\Desktop\\Новая папка'],
+             pathex=['C:\\Users\\Alienware\\Desktop\\git-checker'],
              binaries=[],
-             datas=[('./token.txt', '.')],
+             datas=[],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
